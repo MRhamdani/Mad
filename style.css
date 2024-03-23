@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Hero Section Start */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero .container {
+  margin: 0 50px;
+}
+
+.hero .hero-title {
+  padding: 1.2rem 0.01rem;
+  margin-right: 1.4rem;
+}
+
+.hero .hero-title h1 {
+  font-size: 3.4em;
+  color: #272341;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+
+.hero .hero-title h1 span {
+  color: #00cdac;
+}
+
+.hero .hero-cta .btn {
+  padding: 10px 30px;
+  margin-left: 5px;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  border: 2px solid #00cdac;
+  z-index: 1;
+  color: #00cdac;
+}
+
+.hero .hero-cta .btn::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: #00cdac;
+  transition: all 0.3s ease;
+}
+
+.hero .hero-cta .btn:hover {
+  color: #fff;
+}
+
+.hero .hero-cta .btn:hover::after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.hero .hero-cta .btn:active {
+  top: 2px;
+}
+
+/* Hero Section End */
+
+/* About Section Start */
+.about {
+  background-color: #00cdac;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.about h2 {
+  font-size: 4rem;
+  padding: 3rem 0;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.about img {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  margin-left: 8.3rem;
+  filter: grayscale(100%);
+}
+
+.about .info {
+  font-weight: 700;
+}
+
+.about .info-extra {
+  font-weight: 500;
+}
+
+.about .about-cta .btn {
+  padding: 10px 30px;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  border: 2px solid #fff;
+  z-index: 1;
+  color: #fff;
+}
+
+.about .about-cta .btn::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.about .about-cta .btn:hover {
+  color: #00cdac;
+}
+
+.about .about-cta .btn:hover::after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.about .about-cta .btn:active {
+  top: 2px;
+}
+/* About Section End */
